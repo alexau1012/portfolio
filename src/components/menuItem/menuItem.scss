@@ -1,0 +1,16 @@
+.menuItem {
+    li {
+        margin-bottom: 25px;
+        a {
+            font-size: inherit;
+            color: inherit;
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        &:hover {
+            font-weight: 500;
+        }
+    }
+}
