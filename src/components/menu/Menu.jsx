@@ -3,7 +3,7 @@ import "../menuItem/MenuItem";
 import MenuItem from "../menuItem/MenuItem";
 
 // eslint-disable-next-line
-export default function ({ menuOpen, setMenuOpen }) {
+export default function Menu({ menuOpen, setMenuOpen }) {
     let menuItems = [
         "intro",
         "portfolio",
@@ -15,7 +15,9 @@ export default function ({ menuOpen, setMenuOpen }) {
     return (
         <div className={"menu " + (menuOpen && "active")}>
             <ul>
-                {menuItems.map(item => <MenuItem name={item} setMenuOpen={setMenuOpen}/>)}
+                {
+                    menuItems.map(item => <MenuItem key={item} name={item} setMenuOpen={setMenuOpen}/>)
+                }
             </ul>
         </div>
     )

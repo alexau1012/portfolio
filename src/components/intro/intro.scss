@@ -13,10 +13,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
 
             img {
-                transform: scale(1.25);
-                padding-top: 35%;
+                transform: scale(0.3);
+                padding-top: 570px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
             }
         }
     }
@@ -44,16 +49,41 @@
 
             h3 {
                 font-size: 30px;
+
+                span {
+                    font-size: inherit;
+                    color: crimson;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
             }
         }
 
         a {
             position: absolute;
             bottom: 10px;
-            left: 375px;
+            left: 50%;
 
             img {
                 width: 30px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                50% {
+                    opacity: 0;
+                }
             }
         }
     }
