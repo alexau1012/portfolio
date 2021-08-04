@@ -1,5 +1,4 @@
 import "./menu.scss"
-import "../menuItem/MenuItem";
 import MenuItem from "../menuItem/MenuItem";
 
 // eslint-disable-next-line
