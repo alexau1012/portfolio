@@ -1,10 +1,16 @@
 import "./portfolio.scss"
 import PortfolioList from "../porfolioList/PorfolioList"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { featuredPortfolio,
+    webPortfolio,
+    mobilePortfolio,
+    designPortfolio,
+    contentPortfolio } from "../../data";
 
 export default function Portfolio() {
 
     const [selected, setSelected] = useState("featured")
+    const [data, setData] = useState([])
 
     const list = [
         {
@@ -28,11 +34,34 @@ export default function Portfolio() {
             title: "Branding"
         },
     ]
+
+    useEffect(() => {
+        switch(selected) {
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+            case "web":
+                setData(webPortfolio);
+                break;
+            case "mobile":
+                setData(mobilePortfolio);
+                break;
+            case "design":
+                setData(designPortfolio);
+                break;
+            case "branding":
+                setData(contentPortfolio);
+                break;
+            default:
+                setData(featuredPortfolio);
+        }
+    }, [selected])
+    
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                {list.map(item => 
+                {list.map((item) => 
                     <PortfolioList 
                         title={item.title}
                         active={selected === item.id}
@@ -41,31 +70,13 @@ export default function Portfolio() {
                 )}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1046.25&fit=crop&crop=faces"
-                        alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1046.25&fit=crop&crop=faces"
-                        alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1046.25&fit=crop&crop=faces"
-                        alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1046.25&fit=crop&crop=faces"
-                        alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1046.25&fit=crop&crop=faces"
-                        alt=""/>
-                    <h3>Banking App</h3>
-                </div>
+                {data.map((d) => 
+                    <div className="item" key={d}>
+                        <img src={d.img}
+                            alt=""/>
+                        <h3>{d.title}</h3>
+                    </div>
+                )}
             </div>
         </div>
     )
