@@ -66,12 +66,14 @@ export default function Portfolio() {
                         title={item.title}
                         active={selected === item.id}
                         setSelected={setSelected}
-                        id={item.id}/>
+                        id={item.id}
+                        key={item.id}    
+                    />
                 )}
             </ul>
             <div className="container">
                 {data.map((d) => 
-                    <div className="item" key={d}>
+                    <div className="item" key={d.id}>
                         <img src={d.img}
                             alt=""/>
                         <h3>{d.title}</h3>
