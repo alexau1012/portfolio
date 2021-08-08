@@ -3,7 +3,8 @@ import PortfolioList from "../porfolioList/PorfolioList";
 import { useState, useEffect } from "react";
 import { webPortfolio,
     iosPortfolio,
-    researchPortfolio } from "../../data";
+    scriptingPortfolio,
+    researchPortfolio } from "../../dataPortfolio";
 
 export default function Portfolio() {
 
@@ -20,6 +21,10 @@ export default function Portfolio() {
             title: "IOS App"
         },
         {
+            id: "scripting",
+            title: "Scripting"
+        },
+        {
             id: "research",
             title: "Research"
         },
@@ -32,6 +37,9 @@ export default function Portfolio() {
                 break;
             case "ios":
                 setData(iosPortfolio);
+                break;
+            case "scripting":
+                setData(scriptingPortfolio);
                 break;
             case "research":
                 setData(researchPortfolio);

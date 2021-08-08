@@ -31,6 +31,14 @@ export const iosPortfolio = [
   },
 ];
 
+export const scriptingPortfolio = [
+  {
+    id: 1,
+    title: "Location Aware Project",
+    img: "" //Put in the symnotic floor plan image
+  }
+]
+
 export const researchPortfolio = [
   {
     id: 1,
