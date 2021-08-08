@@ -26,7 +26,7 @@
     }
 
     .slider {
-        height: 350px;
+        height: 380px;
         display: flex;
         position: absolute;
         left: 0;
@@ -100,6 +100,7 @@
                             font-weight: 600;
                             text-decoration: underline;
                             cursor: pointer;
+                            margin-bottom: -5px;
                         }
                     }
                 }
@@ -107,7 +108,15 @@
                 .right {
                     flex: 8;
                     height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    background-color: lightsteelblue;
 
+                    img {
+                        transform: rotate(-10deg);
+                    }
                 }
             }
         }
