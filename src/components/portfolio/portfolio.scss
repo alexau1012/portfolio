@@ -35,7 +35,6 @@
 
         @include mobile {
             width: 100%;
-
         }
 
         .item {
@@ -61,6 +60,7 @@
             h3 {
                 position: absolute;
                 font-style: 20px;
+                text-align: center;
 
                 @include mobile {
                     font-size: 15px;

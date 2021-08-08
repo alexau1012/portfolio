@@ -1,61 +1,45 @@
-import "./portfolio.scss"
-import PortfolioList from "../porfolioList/PorfolioList"
-import { useState, useEffect } from "react"
-import { featuredPortfolio,
-    webPortfolio,
-    mobilePortfolio,
-    designPortfolio,
-    contentPortfolio } from "../../data";
+import "./portfolio.scss";
+import PortfolioList from "../porfolioList/PorfolioList";
+import { useState, useEffect } from "react";
+import { webPortfolio,
+    iosPortfolio,
+    researchPortfolio } from "../../data";
 
 export default function Portfolio() {
 
-    const [selected, setSelected] = useState("featured")
-    const [data, setData] = useState([])
+    const [selected, setSelected] = useState("web");
+    const [data, setData] = useState([]);
 
     const list = [
-        {
-            id: "featured",
-            title: "Featured"
-        },
         {
             id: "web",
             title: "Web App"
         },
         {
-            id: "mobile",
-            title: "Mobile App"
+            id: "ios",
+            title: "IOS App"
         },
         {
-            id: "design",
-            title: "Design"
+            id: "research",
+            title: "Research"
         },
-        {
-            id: "branding",
-            title: "Branding"
-        },
-    ]
+    ];
 
     useEffect(() => {
         switch(selected) {
-            case "featured":
-                setData(featuredPortfolio);
-                break;
             case "web":
                 setData(webPortfolio);
                 break;
-            case "mobile":
-                setData(mobilePortfolio);
+            case "ios":
+                setData(iosPortfolio);
                 break;
-            case "design":
-                setData(designPortfolio);
-                break;
-            case "branding":
-                setData(contentPortfolio);
+            case "research":
+                setData(researchPortfolio);
                 break;
             default:
-                setData(featuredPortfolio);
+                setData(webPortfolio);
         }
-    }, [selected])
+    }, [selected]);
     
     return (
         <div className="portfolio" id="portfolio">
