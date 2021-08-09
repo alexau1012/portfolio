@@ -35,7 +35,7 @@ export const scriptingPortfolio = [
   {
     id: 1,
     title: "Location Aware Project",
-    img: "" //Put in the symnotic floor plan image
+    img: "assets/s3/location-aware.png"
   }
 ]
 
