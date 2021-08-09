@@ -3,6 +3,7 @@ const experiences = [
         id: 1,
         company: "Sonomedical",
         title: "Software Analyst",
+        location: "Sydney",
         employment: "Full-time",
         startDate: "2019-09-23",
         endDate: "",
@@ -12,6 +13,7 @@ const experiences = [
     {
         id: 2,
         company: "Freelance",
+        location: "Sydney",
         title: "Developer",
         employment: "Casual",
         startDate: "2020-11-01",
@@ -22,6 +24,7 @@ const experiences = [
     {
         id: 3,
         company: "ASTRI",
+        location: "Hong Kong",
         title: "Software Engineer",
         employment: "Full-time",
         startDate: "2017-05-01",

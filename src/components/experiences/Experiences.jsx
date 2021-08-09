@@ -15,7 +15,7 @@ export default function Testimonials() {
                     <div className={"c" + d.id + " card"} key={d.id}>
                         <div className="top">
                             <h2>{d.title}</h2>
-                            <h3>{d.company}</h3>
+                            <h3><span>{d.company}</span>, {d.location}</h3>
                             <p>
                               {monthYearFromDate(new Date(d.startDate))} - {d.endDate === "" ? "Present" : monthYearFromDate(new Date(d.endDate))}
                             </p>
