@@ -7,8 +7,11 @@ const experiences = [
         employment: "Full-time",
         startDate: "2019-09-23",
         endDate: "",
-        desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        responsibilies: [
+          "JavaScript front-end development using Angular framework and RxJS",
+          "Back-end development in Node.js and .NET Core",
+          "Work with AWS services including Cognito, DynamoDB, S3, Amplify and API Gateway"
+        ],
     },
     {
         id: 2,
@@ -18,8 +21,9 @@ const experiences = [
         employment: "Casual",
         startDate: "2020-11-01",
         endDate: "2021-04-01",
-        desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        responsibilies: [
+
+        ],
     },
     {
         id: 3,
@@ -29,8 +33,9 @@ const experiences = [
         employment: "Full-time",
         startDate: "2017-05-01",
         endDate: "2019-07-01",
-        desc:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        responsibilies: [
+
+        ],
     },
 ];
 

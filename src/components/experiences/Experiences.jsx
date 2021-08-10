@@ -1,14 +1,14 @@
 import "./experiences.scss"
 import experiences from "../../dataExperiences";
 
-export default function Testimonials() {
+export default function Experiences() {
 
   const monthYearFromDate = (date) => {
     return date.toString().slice(4, 7) + " " + date.toString().slice(10, 15);
   }
   
     return (
-        <div className="testimonials" id="testimonials">
+        <div className="experiences" id="experiences">
             <h1>Work Experiences</h1>
             <div className="container">
                 {experiences.map((d) => 
@@ -20,7 +20,11 @@ export default function Testimonials() {
                               {monthYearFromDate(new Date(d.startDate))} - {d.endDate === "" ? "Present" : monthYearFromDate(new Date(d.endDate))}
                             </p>
                         </div>
-                        <div className="center">{d.desc}</div>
+                        <div className="center">
+                            <ul>
+                                {d.responsibilies.map((responsiblity, idx) => <li key={idx}>{responsiblity}</li>)}
+                            </ul>
+                        </div>
                         <div className="bottom">
                             <img src="assets/right-arrow.png" className="left" alt="" />
                             <img 
