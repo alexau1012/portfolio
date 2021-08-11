@@ -46,11 +46,6 @@
             &.c1 {
                 width: 300px;
                 height: 65%;
-
-                // @include mobile {
-                //     width: 250px;
-                //     height: 180px;
-                // }
             }
 
             &.c2 {
@@ -98,9 +93,11 @@
                 border-radius: 10px;
                 background-color: rgb(255, 239, 241);
                 font-size: 14px;
+                margin: 5px;
 
                 ul {
                     list-style-position: inside;
+                    margin: 10px 5px 10px -20px;
                 }
             }
 
@@ -115,12 +112,12 @@
                         height: 25px;
                     }
 
-                    &.user {
-                        height: 60px;
-                        width: 60px;
-                        border-radius: 50%;
+                    &.icon {
+                        height: 40px;
+                        width: 40px;
                         object-fit: cover;
                         margin: 0 30px;
+                        cursor: pointer;
 
                         @include mobile {
                             height: 30px;

@@ -26,13 +26,11 @@ export default function Experiences() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <img src="assets/right-arrow.png" className="left" alt="" />
                             <img 
-                                src={d.img}
-                                className="user"
+                                src="assets/linkedin.png"
+                                className="icon"
                                 alt=""
                             />
-                            <img src={d.icon} className="right" alt="" />
                         </div>
                     </div>
                 )}
