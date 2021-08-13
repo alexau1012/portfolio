@@ -8,6 +8,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         "portfolio",
         "works",
         "experiences",
+        "education",
+        "skills",
         "contact"
     ]
 
