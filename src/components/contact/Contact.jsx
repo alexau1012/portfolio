@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./contact.scss"
+import { Mail, LinkedIn } from "@material-ui/icons"
 
 export default function Contact() {
 
@@ -17,6 +18,20 @@ export default function Contact() {
             </div>
             <div className="right">
                 <h2>Contact.</h2>
+                <div className="details">
+                    <div className="itemContainer">
+                        <Mail className="icon"/>
+                        <span>alexaumh@gmail.com</span>
+                    </div>
+                    <div className="itemContainer">
+                        <LinkedIn className="icon"/>
+                        <span>
+                            <a href="https://www.linkedin.com/in/alex-au-97592379/" target="_blank" rel="noreferrer">
+                                https://www.linkedin.com/in/alex-au-97592379/
+                            </a>
+                        </span>
+                    </div>
+                </div>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Email" />
                     <textarea placeholder="Message"></textarea>

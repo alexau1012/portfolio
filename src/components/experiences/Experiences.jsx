@@ -26,11 +26,13 @@ export default function Experiences() {
                             </ul>
                         </div>
                         <div className="bottom">
-                            <img 
-                                src="assets/linkedin.png"
-                                className="icon"
-                                alt=""
-                            />
+                            <a href={d.linkedin} target="_blank" rel="noreferrer">
+                                <img 
+                                    src="assets/linkedin.png"
+                                    className="icon"
+                                    alt=""
+                                />
+                            </a>
                         </div>
                     </div>
                 )}

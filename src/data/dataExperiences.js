@@ -47,6 +47,7 @@ const experiences = [
             "SVN source control",
             "Product demonstrations"
         ],
+        linkedin: "https://www.linkedin.com/company/astri/"
     },
 ];
 

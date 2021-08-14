@@ -1,3 +1,4 @@
+@import "../../global.scss";
 
 .skills {
     background-color: white;
@@ -10,6 +11,10 @@
     h1 {
         font-size: 40px;
         overflow: hidden;
+
+        @include mobile {
+            font-size: 30px;
+        }
     }
 
     .container {
