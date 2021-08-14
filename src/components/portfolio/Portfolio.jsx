@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { webPortfolio,
     iosPortfolio,
     scriptingPortfolio,
-    researchPortfolio } from "../../dataPortfolio";
+    researchPortfolio } from "../../data/dataPortfolio";
 
 export default function Portfolio() {
 

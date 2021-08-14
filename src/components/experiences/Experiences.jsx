@@ -1,5 +1,5 @@
 import "./experiences.scss"
-import experiences from "../../dataExperiences";
+import experiences from "../../data/dataExperiences";
 
 export default function Experiences() {
 

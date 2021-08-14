@@ -1,6 +1,6 @@
 import "./works.scss"
 import { useState } from "react";
-import worksData from "../../dataWorks";
+import worksData from "../../data/dataWorks";
 
 export default function Works() {
 
