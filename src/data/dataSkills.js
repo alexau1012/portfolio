@@ -17,7 +17,7 @@ const data = [
     {
         id: 4,
         category: "database",
-        desc: ["DyanmoDB", "MongoDB", "Mongoose", "MySQL"]
+        desc: ["DynamoDB", "MongoDB", "Mongoose", "MySQL"]
     },
     {
         id: 5,

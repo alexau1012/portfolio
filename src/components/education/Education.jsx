@@ -20,8 +20,8 @@ export default function Education() {
                                         <li>{da}</li>
                                     )}
                                 </ul>
-                                <img src={d.img} alt="" />
                             </div>
+                            <img src={d.img} alt="" />
                         </div>
                     )}
             </div>

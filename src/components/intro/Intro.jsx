@@ -11,7 +11,7 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Full Stack", "Test"]
+            strings: ["Full Stack", "Test", "TypeScript", "Node JS", "AWS"]
         })
     }, [])
 
@@ -26,7 +26,8 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hi There, I'm</h2>
                     <h1>Alex Au</h1>
-                    <h3>Software Engineer - <span ref={textRef}></span></h3>
+                    <h3>Software Engineer</h3>
+                    <h4><span ref={textRef}></span></h4>
                 </div>                
                 <a href="#portfolio">
                     <img src="assets/down.png" alt=""/>
