@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./contact.scss"
-import { Mail, LinkedIn } from "@material-ui/icons"
+import { Mail, LinkedIn, GitHub } from "@material-ui/icons"
 
 export default function Contact() {
 
@@ -28,6 +28,14 @@ export default function Contact() {
                         <span>
                             <a href="https://www.linkedin.com/in/alex-au-97592379/" target="_blank" rel="noreferrer">
                                 https://www.linkedin.com/in/alex-au-97592379/
+                            </a>
+                        </span>
+                    </div>
+                    <div className="itemContainer">
+                        <GitHub className="icon"/>
+                        <span>
+                            <a href="https://github.com/alexau1012" target="_blank" rel="noreferrer">
+                                alexau1012
                             </a>
                         </span>
                     </div>
